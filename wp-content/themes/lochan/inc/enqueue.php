@@ -21,8 +21,8 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . '/css/theme.min.css' );
 		wp_enqueue_style( 'understrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $css_version );
 		wp_enqueue_style( 'lochan-styles', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), $css_version );
+		wp_enqueue_style( 'lochan-bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), $css_version );
 		wp_enqueue_style( 'lochan-bootstrap-theme', get_stylesheet_directory_uri() . '/assets/css/bootstrap-theme.css', array(), $css_version );
-		wp_enqueue_style( 'lochan-bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), $css_version );
 		wp_enqueue_style( 'lochan-menu', get_stylesheet_directory_uri() . '/assets/css/main-menu-style.css', array(), $css_version );
 		wp_enqueue_style( 'lochan-owl', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', array(), $css_version );
 		wp_enqueue_style( 'lochan-owl-theme', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), $css_version );

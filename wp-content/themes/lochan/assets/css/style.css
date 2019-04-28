@@ -1806,3 +1806,102 @@ section.inquiry {
 /* ===Inner contact us Inner Page Css Close === */
 
 /*# sourceMappingURL=style.css.map */
+.success_stories_content p
+{
+color:#fff;
+}
+.tnp-field label
+{
+display:none;
+}
+.tnp-field label
+{
+display:none !important;
+}
+.tnp-submit
+{
+position: absolute !important;
+    top: 50% !important;
+width:125px !important;
+height:30px !important;
+    right: 10px !important;
+    max-width: 530px !important;
+    padding: 4.5px 30px !important;
+    border: none !important;
+    background: #005ba9 !important;
+    text-align: center !important;
+    color: #ffffff !important;
+    transform: translate(0, -50%) !important;
+    -webikit-transform: translate(0, -50%) !important;
+    -ms-transform: translate(0, -50%)!important;
+    z-index: 9 !important;
+    -webkit-transition: all 0.2s ease-in-out!important;
+    -moz-transition: all 0.2s ease-in-out !important;
+    -ms-transition: all 0.2s ease-in-out !important;
+    -o-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+    -moz-box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0)!important;
+    -webkit-box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0)!important;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0)!important;
+}
+.tnp-submit:hover
+{
+-webkit-box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5)!important;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5)!important;
+    color: #ffffff!important;
+}
+#menu-item-39 .sub-menu li a
+{
+	    width: 190px !important;
+}
+.wpcf7-text
+{
+	width: 100%;
+   border: 1px solid #eee; 
+   font-size: 12px;
+  padding: 8px 8px;
+}
+.form_name
+{
+margin-bottom: 10px;
+}
+.inner_our_form form .form_textarea textarea 
+{
+height:182px;
+}
+.wpcf7-submit
+{
+	max-width: 170px;
+    width: 100%;
+    background-color: #005ba9;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #005ba9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-box-shadow: inset 0 0 1000px transparent;
+    -webkit-box-shadow: inset 0 0 1000px transparent;
+    box-shadow: inset 0 0 1000px transparent;
+}
+.button  
+{
+text-align:center;
+}
+.header_title h2
+{
+	text-align: center !important;
+}
+.inner_our_form .header_title h2 span:before 
+{
+left: 32% !important;
+}
+.wpcf7-form 
+{
+margin-bottom:50px;
+}
