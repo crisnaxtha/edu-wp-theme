@@ -62,15 +62,25 @@
 		<div class="container-fluid">
 			<div class="navigation_bar">
 				<aside class="logo">
-					<h1>
+					<?php
+					the_custom_logo();
+					?>
+					<!-- <h1>
 						<a href="index.html">
 							<img src="wp-content/themes/global/img/logo.png" alt="">
-							</a>
-					</h1>
+						</a>
+					</h1> -->
 				</aside>
 				<nav>
-					<div id='cssmenu' class="clearfix">
-						<ul>
+					<!-- <div id='cssmenu' class="clearfix"> -->
+					<?php 
+						   wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'container_id' => 'cssmenu',
+							'container_class' => 'clearfix'
+						) );
+					?>
+						<!-- <ul>
 							<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-56">
 								<a href="index.html">Home</a>
 							</li>
@@ -163,8 +173,8 @@
 							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
 								<a href="contact-us/index.html">Contact Us</a>
 							</li>
-						</ul>
-					</div>
+						</ul> -->
+					<!-- </div> -->
 				</nav>
 			</div>
 		</div>
