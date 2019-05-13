@@ -17,11 +17,11 @@ get_header();
 <section class="banner_slider">
     <ul class="owl-carousel">
         <li class="item active" style="background-image:url(wp-content/uploads/2018/01/canada-1-1263x645.png);">
-            <img src="wp-content/themes/global/img/banner-size.png" alt="banner size">
+            <img src="wp-content/themes/lochan/assets/img/banner-size.png" alt="banner size">
                 <!--- Don't make it dynamic -->
         </li>
         <li class="item " style="background-image:url(wp-content/uploads/2018/01/Australia-1263x645.png);">
-            <img src="wp-content/themes/global/img/banner-size.png" alt="banner size">
+            <img src="wp-content/themes/lochan/assets/img/banner-size.png" alt="banner size">
                 <!--- Don't make it dynamic -->
         </li>
     </ul>
@@ -266,13 +266,11 @@ get_header();
                         </figure>
                         <div class="clearfix"></div>
                         <div class="latest_blogs_list_header equal_height_heading">
-                            <!--<h3><a href=""></a></h3>-->
+                            
                         </div>
                         <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">
-GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
+                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
                         <div class="clearfix"></div>
-                        <!--<a href="" target="_blank" class="gecc_btn">Learn More</a>-->
                     </div>
                 </li>
                 <li class="col-sm-4 equal_height">
@@ -284,13 +282,10 @@ GECC is a pioneer and leading educational consultancy service provider with its 
                         </figure>
                         <div class="clearfix"></div>
                         <div class="latest_blogs_list_header equal_height_heading">
-                            <!--<h3><a href=""></a></h3>-->
                         </div>
                         <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">
-GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
+                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
                         <div class="clearfix"></div>
-                        <!--<a href="" target="_blank" class="gecc_btn">Learn More</a>-->
                     </div>
                 </li>
                 <li class="col-sm-4 equal_height">
@@ -302,13 +297,10 @@ GECC is a pioneer and leading educational consultancy service provider with its 
                         </figure>
                         <div class="clearfix"></div>
                         <div class="latest_blogs_list_header equal_height_heading">
-                            <!--<h3><a href=""></a></h3>-->
                         </div>
                         <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">
-GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
+                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
                         <div class="clearfix"></div>
-                        <!--<a href="" target="_blank" class="gecc_btn">Learn More</a>-->
                     </div>
                 </li>
             </ul>
@@ -317,7 +309,7 @@ GECC is a pioneer and leading educational consultancy service provider with its 
             </div>
         </div>
     </div>
-</section>
+</section> 
 															
 <div class="clearfix"></div>
 

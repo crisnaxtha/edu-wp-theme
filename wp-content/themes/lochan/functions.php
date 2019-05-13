@@ -121,20 +121,32 @@ add_action( 'widgets_init', 'lochan_widgets_init' );
  */
 function lochan_scripts() {
 	wp_enqueue_style( 'lochan-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'lochan-styles', get_stylesheet_directory_uri() . '/assets/css/style.css', array() );
-	wp_enqueue_style( 'lochan-bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array() );
-	wp_enqueue_style( 'lochan-bootstrap-theme', get_stylesheet_directory_uri() . '/assets/css/bootstrap-theme.min.css', array() );
-	wp_enqueue_style( 'lochan-menu', get_stylesheet_directory_uri() . '/assets/css/main-menu-styles.css', array() );
-	wp_enqueue_style( 'lochan-owl', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', array() );
-	wp_enqueue_style( 'lochan-owl-theme', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css', array() );
-	wp_enqueue_style( 'lochan-animate', get_stylesheet_directory_uri() . '/assets/css/animate.css', array() );
-	wp_enqueue_style( 'lochan-font-awesome', get_stylesheet_directory_uri() . '/assets/css/font-awesome.min.css', array() );
+	wp_enqueue_style( 'lochan-css', get_template_directory_uri() .'/assets/css/style.css' );
+	wp_enqueue_style( 'lochan-font-awesome', get_template_directory_uri() .'/assets/css/font-awesome.min.css' );
+	wp_enqueue_style( 'lochan-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'lochan-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'lochan-bootstrap-theme', get_template_directory_uri() .'/assets/css/bootstrap-theme.min.css' );
+	wp_enqueue_style( 'lochan-main-menu', get_template_directory_uri() .'/assets/css/main-menu-styles.css' );
+	wp_enqueue_style( 'lochan-owl-carousel', get_template_directory_uri() .'/assets/css/owl.carousel.min.css' );
+	wp_enqueue_style( 'lochan-owl-theme-default', get_template_directory_uri() .'/assets/css/owl.theme.default.min.css' );
+	wp_enqueue_style( 'lochan-fancy-box', get_template_directory_uri() .'/assets/css/fancybox.min.css' );
+	wp_enqueue_style( 'lochan-animate', get_template_directory_uri() .'/assets/css/animate.css' );
+	
 
 	wp_enqueue_script( 'lochan-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'lochan-scripts', get_template_directory_uri() . '/assets/js/main.js', array(), $js_version, true );
-		wp_enqueue_script( 'lochan-menu', get_template_directory_uri() . '/assets/js/main-menu.js', array(), $js_version, true );
-		wp_enqueue_script( 'lochan-owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), $js_version, true );
-		wp_enqueue_script( 'lochan-wow', get_template_directory_uri() . '/assets/js/wow.min.js', array(), $js_version, true );
+	wp_enqueue_script( 'lochan-jquery', get_template_directory_uri() . '/assets/js/jquery/jquery.js', array(), '' );
+	wp_enqueue_script( 'lochan-jquery-migrate', get_template_directory_uri() . '/assets/js/jquery/jquery-migrate.min.js', array(), '' );
+	wp_enqueue_script( 'lochan-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-jquery-1.11.2', get_template_directory_uri() . '/assets/js/vendor/jquery-1.11.2.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-jquery-match-height', get_template_directory_uri() . '/assets/js/jquery/jquery-match-height.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-main', get_template_directory_uri() . '/assets/js/main.js', array(), '', true );
+	wp_enqueue_script( 'lochan-wow', get_template_directory_uri() . '/assets/js/wow.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-main-menu', get_template_directory_uri() . '/assets/js/main-menu.js', array(), '', true );
+	wp_enqueue_script( 'lochan-fancybox', get_template_directory_uri() . '/assets/js/fancybox.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-prettyphoto', get_template_directory_uri() . '/assets/js/prettyPhoto.js', array(), '', true );
+	
 
 	wp_enqueue_script( 'lochan-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
