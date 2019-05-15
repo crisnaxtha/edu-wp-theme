@@ -28,6 +28,11 @@ get_header();
 </section>
 
 <div class="clearfix"></div>
+<?php if(is_front_page()): ?>
+    <?php if (is_active_sidebar( 'lochan_template_section' ) ) : ?>
+        <?php dynamic_sidebar( 'lochan_template_section' ); ?>
+    <?php endif; ?>
+<?php endif; ?>
 
 <section class="study_abroad">
 	<div class="container">
