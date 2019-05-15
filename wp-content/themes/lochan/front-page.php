@@ -34,7 +34,7 @@ get_header();
     <?php endif; ?>
 <?php endif; ?>
 
-<section class="study_abroad">
+<!-- <section class="study_abroad">
 	<div class="container">
 		<div class="row flex-center">
 			<div class="col-sm-6">
@@ -133,11 +133,11 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<div class="clearfix"></div>
+<!-- <div class="clearfix"></div> -->
 
-<section class="about_us"  style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/about-us-bg.png);">
+<!-- <section class="about_us"  style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/about-us-bg.png);">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-push-4">
@@ -153,11 +153,11 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 									
-<div class="clearfix"></div>
+<!-- <div class="clearfix"></div> -->
 
-<section class="our_services">
+<!-- <section class="our_services">
     <div class="container">
         <div class="our_services_header">
             <h2 class="section_title">Our Services</h2>
@@ -189,9 +189,9 @@ get_header();
             </ul>
         </div>
     </div>
-</section>
+</section> -->
 
-<div class="clearfix"></div>
+<!-- <div class="clearfix"></div> -->
 
 <section class="test_preparation" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/test-preparation.jpg);">
     <div class="container">

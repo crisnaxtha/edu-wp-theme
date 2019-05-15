@@ -186,6 +186,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /************************ Deepmala Sidebar/ Widgets  *****************************/
 require get_template_directory() . '/inc/widgets/widgets-functions/register-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/page-box-widget.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/page-box-two-widget.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/category-box-widget.php';
 
 

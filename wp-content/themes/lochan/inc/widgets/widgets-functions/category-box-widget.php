@@ -7,15 +7,15 @@
  * @package DEEP
  */
 
-class Deepmala_Category_Widget extends WP_Widget {
+class Category_Box_Widget extends WP_Widget {
     /**
 	 * Register widget with WordPress.
 	 */
 
     function __construct() {
-        $widget_ops = array('classname' => 'category-box-widget', 'description' => __('Display Category Box Widget', 'deepmala'));
+        $widget_ops = array('classname' => 'category-box-widget', 'description' => __('Display Category Box Widget', 'lochan'));
         $control_ops = array('width' => 200, 'height' => 250);
-        parent::__construct(false, $name=__('DM: Category Box Widget', 'deepmala'), $widget_ops, $control_ops);
+        parent::__construct(false, $name=__('LO: Category Box Widget', 'lochan'), $widget_ops, $control_ops);
     }
 
     /**
@@ -34,27 +34,27 @@ class Deepmala_Category_Widget extends WP_Widget {
        ?>
         <p>
 			<label for="<?php echo $this->get_field_id('title');?>">
-				<?php _e('Title:', 'deepmala');?>
+				<?php _e('Title:', 'lochan');?>
 			</label>
 			<input id="<?php echo $this->get_field_id('title');?>" name="<?php echo $this->get_field_name('title');?>" type="text" value="<?php echo esc_attr($title);?>" />
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('link');?>">
-				<?php _e('Custom Link:', 'deepmala');?>
+				<?php _e('Custom Link:', 'lochan');?>
 			</label>
 			<input id="<?php echo $this->get_field_id('link');?>" name="<?php echo $this->get_field_name('link');?>" type="text" value="<?php echo esc_url($link);?>" />
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('number'); ?>">
-			<?php _e( 'Number of Post:', 'deepmala' ); ?>
+			<?php _e( 'Number of Post:', 'lochan' ); ?>
 			</label>
 			<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo absint($number); ?>" size="3" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'deepmala' ); ?>:</label>
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'lochan' ); ?>:</label>
 			<?php wp_dropdown_categories( array( 'show_option_none' =>' ','name' => $this->get_field_name( 'category'), 'value_field' => 'slug' , 'selected' => $category ) ); ?>
 		</p>
        
@@ -85,7 +85,7 @@ class Deepmala_Category_Widget extends WP_Widget {
 		$link = isset( $instance[ 'link' ] ) ? $instance[ 'link' ] : '';
 		$number = empty( $instance[ 'number' ] ) ? 3 : $instance[ 'number' ];
         $category = isset( $instance[ 'category' ] ) ? $instance[ 'category' ] : '';
-        print_r($category);die;
+        
         if($category !='-1'){ 
 			$get_category_posts = new WP_Query( 
 			array( 
@@ -112,43 +112,37 @@ class Deepmala_Category_Widget extends WP_Widget {
             $category_term = get_category_by_slug($category);
             $category_id = $category_term->term_id;
         ?>
-        	<?php if($title != '' ) { ?>
-                <h6 class="text-red mb-4"><a href="<?php echo get_category_link($category_term->term_id); ?>"><?php echo $title ?></a></h6>
-            <?php } else {?>
-                <h6 class="text-red mb-4"><a href="<?php echo get_category_link($category_term->term_id); ?>"><?php echo $category_term->name; ?></a></h6>
-            <?php } ?>
-			<!-- Blog-->
-			<div class="row blog-post">
-                <?php
-                while ( $get_category_posts->have_posts() ) :
-                    $get_category_posts->the_post(); 
-                
-                ?>
-				<div class="col-md-6 col-lg-4">
-					<article>
-                        <figure class="entry-media">
-                            <?php if( has_post_thumbnail() ){?>
-                                <img class="lozad" src="assets/images/home-1/10-lqip.jpg" data-src="<?php the_post_thumbnail_url();?>" alt="Entry Image"/>
-                            <?php } ?>
-                        </figure>
-                        <div class="entry-content-wrapper">
-                            <header class="entry-header">
-                                <div class="entry-meta-top">
-                                    <span class="entry-author"><i class="far fa-user"></i><?php esc_attr(the_author()) ?></span>
-                                    <span class="entry-meta-date"><i class="far fa-clock"></i><?php the_time('F j, Y'); ?></span>    
-                                </div>
-                                <h2 class="entry-title">
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                </h2>
-                            </header>
-                        </div>
-					</article>
+            <section class="our_services">
+                <div class="container">
+                    <div class="our_services_header">
+                    <?php if($title != '' ) { ?>
+                        <h2 class="section_title"><?php echo $title ?></h2>
+                    <?php } else {?>
+                        <h2 class="section_title"><?php echo $category_term->name; ?></h2>
+                    <?php } ?>                    
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="our_services_content">
+                        <ul class="row">
+                            <?php
+                            while ( $get_category_posts->have_posts() ) :
+                                $get_category_posts->the_post(); 
+                            ?>
+                            <li class="col-sm-4 equal_height">
+                                <a href="<?php the_permalink(); ?>" class="inner_equal_height">
+                                    <h3><?php the_title(); ?></h3>
+                                    <div class="clearfix"></div>
+                                    <div class="our_services_list_desc"><?php echo wp_trim_words( get_the_excerpt(), 20 , ' ...' ); ?></div>
+                                </a>
+                            </li>
+                            <?php endwhile;
+                                wp_reset_postdata(); ?>
+                        </ul>
+                    </div>
                 </div>
-                <?php endwhile;
-                wp_reset_postdata(); ?>
-			</div>
-            <!-- End Blog-->
-			<div class="text-center align-items-center"><a class="btn btn-light" href="<?php echo get_category_link($category_term->term_id); ?>">View More</a></div>
+            </section>
+            <div class="clearfix"></div>
+
         <?php 
         echo $after_widget.'<!-- end .widget-Box-box -->';
     }
