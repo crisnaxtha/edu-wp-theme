@@ -535,5 +535,5 @@ get_header();
 <div class="clearfix"></div>
 
 <?php
-get_sidebar();
+
 get_footer();

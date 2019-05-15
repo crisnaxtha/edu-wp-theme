@@ -79,7 +79,7 @@
 							'container_id' => 'cssmenu',
 							'container_class' => 'clearfix'
 						) );
-					?>
+					?> 
 						<!-- <ul>
 							<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-56">
 								<a href="index.html">Home</a>
@@ -173,8 +173,8 @@
 							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
 								<a href="contact-us/index.html">Contact Us</a>
 							</li>
-						</ul> -->
-					<!-- </div> -->
+						</ul> 
+					</div> -->
 				</nav>
 			</div>
 		</div>
