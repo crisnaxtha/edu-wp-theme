@@ -15,7 +15,12 @@
 get_header();
 ?>
 <section class="banner_slider">
-<div id="particles-banner-wrapper" style="background-image:url(wp-content/uploads/2018/01/japan.jpg);background-size: cover;">
+<div class="" id="particles-banner-wrapper" style="background-image:url(wp-content/uploads/2018/01/japan.jpg);background-size: cover;">
+<div id="particles-banner"></div>
+</div>
+</section>
+
+<!-- <div class="banner banner-bg" id="particles-banner-wrapper" style="background-image:url(wp-content/uploads/2018/01/japan.jpg);background-size: cover;">
 <div id="particles-banner"></div>
  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -61,8 +66,7 @@ get_header();
             </span>
         </a>
     </div>
-</div> 
-</section>
+</div>  -->
 
 <div class="clearfix"></div>
 <?php if(is_front_page()): ?>

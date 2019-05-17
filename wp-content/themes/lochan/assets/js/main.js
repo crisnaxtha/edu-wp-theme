@@ -52,13 +52,13 @@ $(function() {
 
 		})
 
-		$(".about_us, .test_preparation, .success_stories").addClass("wow fadeIn");
-		$(".about_us_inner, .our_services_content li, .youtube_video_player, .photo_gallery_slider li").addClass("wow zoomIn");
-		$(".subscribe").addClass("wow jackInTheBox");
-		$(".test_preparation_list li:nth-of-type(even), .study_abroad_countries li:nth-of-type(odd), .youtube_video_heading, .latest_blogs_list li:nth-of-type(even)").addClass("wow slideInRight");
-		$(".study_abroad_content, .test_preparation_list li:nth-of-type(odd), .study_abroad_countries li:nth-of-type(even), .latest_blogs_list li:nth-of-type(odd)").addClass("wow slideInLeft");
-		$(".our_services_header, .test_preparation_heading, .latest_blogs_header, .photo_gallery_header, .success_stories_header").addClass("wow slideInDown");
-		$(".main_footer").addClass("wow slideInUp");
+		// $(".about_us, .test_preparation, .success_stories").addClass("wow fadeIn");
+		// $(".about_us_inner, .our_services_content li, .youtube_video_player, .photo_gallery_slider li").addClass("wow zoomIn");
+		// $(".subscribe").addClass("wow jackInTheBox");
+		// $(".test_preparation_list li:nth-of-type(even), .study_abroad_countries li:nth-of-type(odd), .youtube_video_heading, .latest_blogs_list li:nth-of-type(even)").addClass("wow slideInRight");
+		// $(".study_abroad_content, .test_preparation_list li:nth-of-type(odd), .study_abroad_countries li:nth-of-type(even), .latest_blogs_list li:nth-of-type(odd)").addClass("wow slideInLeft");
+		// $(".our_services_header, .test_preparation_heading, .latest_blogs_header, .photo_gallery_header, .success_stories_header").addClass("wow slideInDown");
+		// $(".main_footer").addClass("wow slideInUp");
 		//wow.js
 		wow = new WOW({
 		    boxClass: 'wow', // default
