@@ -23,4 +23,6 @@
 	register_widget( 'Page_Box_Widget' );
 	register_widget( 'Page_Box_Two_Widget' );
 	register_widget( 'Category_Box_Widget' );
+	register_widget( 'Category_Box_Two_Widget' );
+	register_widget( 'Youtube_Widget' );
  }

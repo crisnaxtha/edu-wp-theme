@@ -8,52 +8,29 @@
  */
 
 ?>
+<section class="page_banner_top" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/about-us.png);">
+	<div class="page_banner_top_overlay">
+		<div class="container">
+			<h4><?php the_title(); ?></h4>
+			<div class="clearfix"></div>
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active"><?php the_title(); ?></li>
+			</ol>
+		</div>
+	</div>
+</section>
+	
+<div class="clearfix"></div>
+	
+<div class="content_page">
+	<div class="container">
+		<div class="content_page_inner">
+			<?php the_content(); ?>
+		</div>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+	</div>
+</div>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				lochan_posted_on();
-				lochan_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+<div class="clearfix"></div>
 
-	<?php lochan_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'lochan' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lochan' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php lochan_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

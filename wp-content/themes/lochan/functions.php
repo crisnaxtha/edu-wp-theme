@@ -146,6 +146,8 @@ function lochan_scripts() {
 	wp_enqueue_script( 'lochan-main-menu', get_template_directory_uri() . '/assets/js/main-menu.js', array(), '', true );
 	wp_enqueue_script( 'lochan-fancybox', get_template_directory_uri() . '/assets/js/fancybox.min.js', array(), '', true );
 	wp_enqueue_script( 'lochan-prettyphoto', get_template_directory_uri() . '/assets/js/prettyPhoto.js', array(), '', true );
+	wp_enqueue_script( 'lochan-particle', get_template_directory_uri() . '/assets/js/particles.min.js', array(), '', true );
+	wp_enqueue_script( 'lochan-app', get_template_directory_uri() . '/assets/js/app.js', array(), '', true );
 	
 
 	wp_enqueue_script( 'lochan-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -188,6 +190,8 @@ require get_template_directory() . '/inc/widgets/widgets-functions/register-widg
 require get_template_directory() . '/inc/widgets/widgets-functions/page-box-widget.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/page-box-two-widget.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/category-box-widget.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/category-box-two-widget.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/youtube-widget.php';
 
 
 

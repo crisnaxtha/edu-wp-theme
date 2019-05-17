@@ -69,3 +69,6 @@ $(function() {
 		})
 		wow.init();
 	});
+
+
+ 

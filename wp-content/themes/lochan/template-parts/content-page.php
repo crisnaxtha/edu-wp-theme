@@ -9,44 +9,29 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<section class="page_banner_top" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/about-us.png);">
+	<div class="page_banner_top_overlay">
+		<div class="container">
+			<h4><?php the_title(); ?></h4>
+			<div class="clearfix"></div>
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active"><?php the_title(); ?></li>
+			</ol>
+		</div>
+	</div>
+</section>
+	
+<div class="clearfix"></div>
+	
+<div class="content_page">
+	<div class="container">
+		<div class="content_page_inner">
+			<?php the_content(); ?>
+		</div>
 
-	<?php lochan_post_thumbnail(); ?>
+	</div>
+</div>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+<div class="clearfix"></div>
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lochan' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'lochan' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->

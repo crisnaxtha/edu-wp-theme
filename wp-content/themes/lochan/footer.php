@@ -60,8 +60,8 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="designed_copyright">
-			<p>© 2017 Global Education Counselling Centre Pvt. Ltd.. All Rights Reserved</p>
-			<p>Designed @ developed by <a href="http://shardait.com/">SHARDAIT</a></p>
+			<p>© <?php echo date('Y') ?> GEN. All Rights Reserved</p>
+			<p>Designed @ developed by <a href="#">LOCHAN</a></p>
 		</div>
 	</div>
 </footer>

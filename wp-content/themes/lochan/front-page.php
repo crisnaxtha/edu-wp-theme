@@ -15,16 +15,53 @@
 get_header();
 ?>
 <section class="banner_slider">
-    <ul class="owl-carousel">
-        <li class="item active" style="background-image:url(wp-content/uploads/2018/01/canada-1-1263x645.png);">
-            <img src="wp-content/themes/lochan/assets/img/banner-size.png" alt="banner size">
-                <!--- Don't make it dynamic -->
-        </li>
-        <li class="item " style="background-image:url(wp-content/uploads/2018/01/Australia-1263x645.png);">
-            <img src="wp-content/themes/lochan/assets/img/banner-size.png" alt="banner size">
-                <!--- Don't make it dynamic -->
-        </li>
-    </ul>
+<div id="particles-banner-wrapper" style="background-image:url(wp-content/uploads/2018/01/japan.jpg);background-size: cover;">
+<div id="particles-banner"></div>
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item item-bg active">
+                <div class="carousel-caption banner-slider-inner d-flex text-center">
+                    <div class="carousel-content container">
+                        <div class="text-c">
+                            <h1 data-animation="animated fadeInDown delay-05s">WE ARE EAGER TO BUILD OUR NATION</h1>
+                            <p data-animation="animated fadeInUp delay-10s">We aim to develop local technical expertise to an internationally accepted level and to assist Nepal in augmenting development efforts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item-bg">
+                <div class="carousel-caption banner-slider-inner d-flex text-left">
+                    <div class="carousel-content container">
+                        <div class="text-l">
+                            <h1 data-animation="animated fadeInDown delay-05s">OUR VISION</h1>
+                            <p data-animation="animated fadeInUp delay-10s">To be one of the leaders in providing consultancy services in our domain of expertise to Nepal Government, Business Houses and Development Agencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item-bg">
+                <div class="carousel-caption banner-slider-inner d-flex text-left">
+                    <div class="carousel-content container">
+                        <div class="text-r">
+                            <h1 data-animation="animated fadeInDown delay-05s">OUR MISSION</h1>
+                            <p data-animation="animated fadeInUp delay-10s">To be an independent and leading consultancy service provider by offering quality services from highly skilled professional with sound technical knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="slider-mover-left" aria-hidden="true">
+                <i class="fa fa-angle-left"></i>
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="slider-mover-right" aria-hidden="true">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </a>
+    </div>
+</div> 
 </section>
 
 <div class="clearfix"></div>
@@ -34,166 +71,7 @@ get_header();
     <?php endif; ?>
 <?php endif; ?>
 
-<!-- <section class="study_abroad">
-	<div class="container">
-		<div class="row flex-center">
-			<div class="col-sm-6">
-				<div class="study_abroad_content">
-					<div class="study_abroad_content_inner">
-						<div class="section_content_header">
-							<h2 class="section_title">About Us</h2>
-						</div>
-						<div class="clearfix"></div>
-						<div class="section_content_desc">
-							<p>Study Abroad Programs give you the opportunity to experience the world as your classroom. Rather than picking things up from books and the Internet, navigating a new landscape may open your eyes to culture, history, a new language or your heritage. Studying Abroad opens the door to personal growth and discovery too. As you learn to say ‘hello’ in a foreign language, make friends, eat exciting new foods, it is bound to boost your confidence, teach you self-reliance and stretch the parameters of your comfort zone.</p>
-						</div>
-						<div class="clearfix"></div>
-						<a href="http://globalgecc.edu.np/study-abroad/" class="gecc_btn hidden-xs">view all countries</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="study_abroad_countries">
-					<ul class="row">
-						<li class="col-xs-6 col-md-4">
-							<a href="http://globalgecc.edu.np/study-abroad/india/">
-								<figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/indi-165x165.png)">
-									<img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/indi-165x165.png" alt="">
-								</figure>
-								<figcaption>India</figcaption>
-							</a>
-						</li>
-						<li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/bangladesh/">
-                            <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Bangladesh-165x165.png)">
-                                <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Bangladesh-165x165.png" alt="">
-                            </figure>
-                            <figcaption>Bangladesh</figcaption>
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/denmark/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Denmark-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Denmark-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Denmark</figcaption>
-                            </a>
-                        </li>
-						<li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/ireland/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/ireland-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/ireland-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Ireland</figcaption>
-                            </a>
-						</li>
-						<li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/newzealand/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Nz-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Nz-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Newzealand</figcaption>
-                            </a>
-						</li>
-						<li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/usa/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/USA-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/USA-165x165.png" alt="">
-                                </figure>
-                                <figcaption>USA</figcaption>
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/canada-2/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Cana-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Cana-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Canada</figcaption>
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/australia/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Australia-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Australia-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Australia</figcaption>
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-md-4">
-                            <a href="http://globalgecc.edu.np/study-abroad/japan/">
-                                <figure style="background-image:url(http://globalgecc.edu.np/wp-content/uploads/2017/12/Japan-165x165.png)">
-                                    <img src="http://globalgecc.edu.np/wp-content/uploads/2017/12/Japan-165x165.png" alt="">
-                                </figure>
-                                <figcaption>Japan</figcaption>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="http://globalgecc.edu.np/study-abroad/japan/" class="gecc_btn visible-xs">view all countries</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<!-- <div class="clearfix"></div> -->
-
-<!-- <section class="about_us"  style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/about-us-bg.png);">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-push-4">
-                <div class="about_us_inner">
-                    <div class="about_us_header">
-                        <h2 class="section_title">GLOBAL EDUCATION COUNSELLING CENTER</h2>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="about_us_content_desc">We welcome you to the official website of the Global Education Counselling Centre Pvt. Ltd. We want to welcome you to our organization also.GECC has been contributing to the professional and ethical development of the students through its mission. It has been conducting seminars, providing career guidance and free counseling, organizing international education fairs twice a year and participating in various international education exhibitions, since its establishment in 1996...							</div>
-                    <div class="clearfix"></div>
-                    <a href="http://globalgecc.edu.np/global-education-councelling-center/" class="gecc_btn_red">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-									
-<!-- <div class="clearfix"></div> -->
-
-<!-- <section class="our_services">
-    <div class="container">
-        <div class="our_services_header">
-            <h2 class="section_title">Our Services</h2>
-        </div>
-        <div class="clearfix"></div>
-        <div class="our_services_content">
-            <ul class="row">
-                <li class="col-sm-4 equal_height">
-                    <a href="http://globalgecc.edu.np/service/we-represent/" class="inner_equal_height">
-                        <h3>We Represent</h3>
-                        <div class="clearfix"></div>
-                        <div class="our_services_list_desc">Here is a list of universities we represent:The Names, University, Affiliation and Recognition o..</div>
-                    </a>
-                </li>
-                <li class="col-sm-4 equal_height">
-                    <a href="http://globalgecc.edu.np/service/application-process/" class="inner_equal_height">
-                        <h3>Application Process</h3>
-                        <div class="clearfix"></div>
-                        <div class="our_services_list_desc">Application process varies depending on country your university of interest is in. Student must be e..								</div>
-                    </a>
-                </li>
-                <li class="col-sm-4 equal_height">
-                    <a href="http://globalgecc.edu.np/service/financial-assistance/" class="inner_equal_height">
-                        <h3>Financial Assistance</h3>
-                        <div class="clearfix"></div>
-                        <div class="our_services_list_desc">If you are not financially sound, we can arrange your contact with related parties and you can make ..								</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section> -->
-
-<!-- <div class="clearfix"></div> -->
-
-<section class="test_preparation" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/test-preparation.jpg);">
+<!-- <section class="test_preparation" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/test-preparation.jpg);">
     <div class="container">
         <div class="test_preparation_heading">
             <h2 class="section_title">Test Preparation Classes</h2>
@@ -248,77 +126,13 @@ get_header();
             </ul>
         </div>
     </div>
-</section>
+</section> -->
 															
-<div class="clearfix"></div>
+<!-- <div class="clearfix"></div> -->
 															
-<section class="latest_blogs">
-    <div class="container">
-        <div class="latest_blogs_header">
-            <h2 class="section_title">Our News and events</h2>
-            <div class="clearfix"></div>
-            <h4 class="section_title_desc">Upcoming Educational Events for your future career.</h4>
-        </div>
-        <div class="clearfix"></div>
-        <div class="latest_blogs_list">
-            <ul class="row">
-                <li class="col-sm-4 equal_height">
-                    <div class="latest_blogs_list_inner inner_equal_height">
-                        <figure>
-                            <a href="https://www.facebook.com/337125683061756_2205863652854607" style="background-image:url(https://scontent.xx.fbcdn.net/v/t1.0-9/q92/s720x720/59342988_2205863659521273_562006220257361920_o.jpg?_nc_cat=108&_nc_ht=scontent.xx&oh=f6da689dcb1d190654791018aec5a10a&oe=5D623348);" target="_blank">
-                                <img src="http://globalgecc.edu.np/wp-content/themes/global/img/news_events.png" alt=""/>
-                            </a>
-                        </figure>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_header equal_height_heading">
-                            
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
-                        <div class="clearfix"></div>
-                    </div>
-                </li>
-                <li class="col-sm-4 equal_height">
-                    <div class="latest_blogs_list_inner inner_equal_height">
-                        <figure>
-                            <a href="https://www.facebook.com/337125683061756_2205861742854798" style="background-image:url(https://scontent.xx.fbcdn.net/v/t1.0-9/q92/s720x720/59177962_2205861749521464_6859174956257771520_o.jpg?_nc_cat=102&_nc_ht=scontent.xx&oh=31098c6d26f7b4c6b79178862311cfa8&oe=5D608139);" target="_blank">
-                                <img src="http://globalgecc.edu.np/wp-content/themes/global/img/news_events.png" alt=""/>
-                            </a>
-                        </figure>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_header equal_height_heading">
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
-                        <div class="clearfix"></div>
-                    </div>
-                </li>
-                <li class="col-sm-4 equal_height">
-                    <div class="latest_blogs_list_inner inner_equal_height">
-                        <figure>
-                            <a href="https://www.facebook.com/337125683061756_2205858812855091" style="background-image:url(https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/59444788_2205858626188443_7301442908551380992_o.png?_nc_cat=105&_nc_ht=scontent.xx&oh=fbe07075f2472fc18a9529bc9ccd13b9&oe=5D566695);" target="_blank">
-                                <img src="http://globalgecc.edu.np/wp-content/themes/global/img/news_events.png" alt=""/>
-                            </a>
-                        </figure>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_header equal_height_heading">
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="latest_blogs_list_desc equal_height_desc">GECC is a pioneer and leading educational consultancy service provider with its head office in Bagbazar, since 1996 and ..								</div>
-                        <div class="clearfix"></div>
-                    </div>
-                </li>
-            </ul>
-            <div class="text-center">
-                <a href="http://globalgecc.edu.np/news"  class="gecc_btn">View All</a>
-            </div>
-        </div>
-    </div>
-</section> 
-															
-<div class="clearfix"></div>
 
-<section class="youtube_video" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/youtube-bg.png);">
+
+<!-- <section class="youtube_video" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/youtube-bg.png);">
     <div class="container">
         <div class="row flex-center">
             <div class="col-sm-6 col-sm-push-6">
@@ -344,15 +158,15 @@ get_header();
                 </div>
                 <div class="clearfix"></div>
                 <a href="http://globalgecc.edu.np/youtube" class="gecc_btn_red visible-xs">Watch Them All</a>
-                <!--Button visible in mobile device only-->
+                Button visible in mobile device only
             </div>
         </div>
     </div>
 </section>
 
-<div class="clearfix"></div>
+<div class="clearfix"></div> -->
 															
-<section class="photo_gallery">
+<!-- <section class="photo_gallery">
     <div class="container">
         <div class="photo_gallery_header">
             <h2 class="section_title">Gallery</h2>
@@ -453,9 +267,9 @@ get_header();
             <a href="http://globalgecc.edu.np/album" class="gecc_btn">View All</a>
         </div>
     </div>
-</section>
+</section> -->
 
-<div class="clearfix"></div>
+<!-- <div class="clearfix"></div> -->
 
 <section class="success_stories" style="background-image:url(http://globalgecc.edu.np/wp-content/themes/global/img/success_stories.png);">
 <div class="container">
