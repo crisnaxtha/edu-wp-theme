@@ -329,33 +329,7 @@ get_header();
 
 <div class="clearfix"></div>
 
-<section class="subscribe">
-    <div class="container">
-        <div class="subscribe_inner">
-            <div class="subscribe_header">
-                <h2 class="section_title">Subscribe
-                    <span>to Our Newsletter</span>
-                </h2>
-            </div>
-            <div class="subscribe_form">
-                <div class="tnp tnp-subscription">
-                    <form method="post" action="http://globalgecc.edu.np/?na=s" onsubmit="return newsletter_check(this)">
-                        <input type="hidden" name="nr" value="page">
-                            <div class="tnp-field tnp-field-email">
-                                <label>Email</label>
-                                <input class="tnp-email" type="email" name="ne" required>
-                            </div>
-                            <div class="tnp-field tnp-field-button">
-                                <input class="tnp-submit" type="submit" value="Subscribe">
-                            </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<div class="clearfix"></div>
 
 <?php
 

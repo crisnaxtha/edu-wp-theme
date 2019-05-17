@@ -10,7 +10,33 @@
  */
 
 ?>
+<section class="subscribe">
+    <div class="container">
+        <div class="subscribe_inner">
+            <div class="subscribe_header">
+                <h2 class="section_title">Subscribe
+                    <span>to Our Newsletter</span>
+                </h2>
+            </div>
+            <div class="subscribe_form">
+                <div class="tnp tnp-subscription">
+                    <form method="post" action="http://globalgecc.edu.np/?na=s" onsubmit="return newsletter_check(this)">
+                        <input type="hidden" name="nr" value="page">
+                            <div class="tnp-field tnp-field-email">
+                                <label>Email</label>
+                                <input class="tnp-email" type="email" name="ne" required>
+                            </div>
+                            <div class="tnp-field tnp-field-button">
+                                <input class="tnp-submit" type="submit" value="Subscribe">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<div class="clearfix"></div>
 
 <footer class="main_footer">
 	<div class="container">
@@ -27,11 +53,9 @@
 		<div class="contact_details">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-4 footer_widget equal_height">
-				<?php if(is_front_page()): ?>
 					<?php if (is_active_sidebar( 'lochan_footer_section_1' ) ) : ?>
 						<?php dynamic_sidebar( 'lochan_footer_section_1' ); ?>
 					<?php endif; ?>
-				<?php endif; ?>
 					<!-- <h3 class="footer_title">Call Us</h3>
 					<div class="clearfix"></div>
 					<ul>
@@ -42,11 +66,10 @@
 					</ul> -->
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 footer_widget equal_height">
-				<?php if(is_front_page()): ?>
 					<?php if (is_active_sidebar( 'lochan_footer_section_2' ) ) : ?>
 						<?php dynamic_sidebar( 'lochan_footer_section_2' ); ?>
 					<?php endif; ?>
-				<?php endif; ?>
+			
 					<!-- <h3 class="footer_title">Address</h3>
 					<div class="clearfix"></div>
 					<p>Bagbazar (Opp. To HOTEL HARDIK)</br>Kathmandu, Nepal</p>
@@ -59,11 +82,10 @@
 					</ul> -->
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 footer_widget equal_height">
-				<?php if(is_front_page()): ?>
 					<?php if (is_active_sidebar( 'lochan_footer_section_2' ) ) : ?>
 						<?php dynamic_sidebar( 'lochan_footer_section_2' ); ?>
 					<?php endif; ?>
-				<?php endif; ?>
+				
 					<!-- <h3 class="footer_title">Email</h3>
 					<div class="clearfix"></div>
 					<ul>

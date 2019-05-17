@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 <header class="main_header">
 	<section class="topbar_wrap">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="topbar_content">
 				<div class="left_top_content">
 					<?php if(is_front_page()): ?>
@@ -64,7 +64,7 @@
 	</section>
 	<div class="clearfix"></div>
 	<div class="top_header logo_navigation">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="navigation_bar">
 				<aside class="logo">
 					<?php
