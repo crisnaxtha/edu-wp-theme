@@ -25,8 +25,13 @@
 		<div class="container-fluid">
 			<div class="topbar_content">
 				<div class="left_top_content">
-					<i class="fa fa-phone-square" aria-hidden="true"></i> 01-4215762/4246007, 
-					<i class="fa fa-map-marker" aria-hidden="true"></i> Bagbazar, Kathmandu  |  Registration No: 301637277
+					<?php if(is_front_page()): ?>
+						<?php if (is_active_sidebar( 'lochan_header_info' ) ) : ?>
+							<?php dynamic_sidebar( 'lochan_header_info' ); ?>
+						<?php endif; ?>
+					<?php endif; ?>
+					<!-- <i class="fa fa-phone-square" aria-hidden="true"></i> 01-4215762/4246007, 
+					<i class="fa fa-map-marker" aria-hidden="true"></i> Bagbazar, Kathmandu  |  Registration No: 301637277 -->
 						
 				</div>
 				<div class="clearfix"></div>
