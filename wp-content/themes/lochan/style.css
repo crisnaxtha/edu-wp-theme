@@ -1,0 +1,54 @@
+/*!
+Theme Name: lochan
+Theme URI: http://underscores.me/
+Author: Krishna Hari Shrestha
+Author URI: http://Krishnaharishrestha.com.np
+Description: Website For Education Consultancy
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: lochan
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+lochan is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* =================================== Custom ========================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
+
+* {
+  font-family: "Bookman", serif;
+}
+
+div#particles-banner {
+	width: 100%;
+	height: 94vh;
+	background-color: rgba(36, 42, 53, 0.7);
+	/* position: absolute; */
+}
+
+
+div.about_us_content_desc > p {
+	color : #fff;
+}
+
+a , a:hover{
+    text-decoration: none !important;
+}
+
+.current_page_item,
+.current-menu-ancestor > a {
+	color: red;
+}
+
+h4 {
+	color : #20c195;
+}
